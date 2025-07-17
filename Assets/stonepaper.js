@@ -89,7 +89,7 @@ function handleSelection(userChoice, userImg) {
     gamecontainer.appendChild(CpuDiv);
 
     showResult(userChoice, cpuChoice.name);
-  }, 500);
+  }, 2000);
 }
 
 function showResult(user, cpu) {
@@ -126,8 +126,11 @@ function showResult(user, cpu) {
 }
 
 function updateScoreBoard() {
-  const scoreBoard = document.getElementById("scoreBoard");
-  scoreBoard.textContent = ` Your Score: ${userScore} | Mohit's Score: ${cpuScore}`;
+  const CpuscoreBoard = document.getElementById("PlayerscoreBoard");
+  const PlayerscoreBoard = document.getElementById("CpuscoreBoard");
+
+  PlayerscoreBoard.textContent = ` Your Score: ${userScore} `;
+  CpuscoreBoard.textContent = ` Mohit's Score: ${cpuScore}`;
 }
 
 function fireCrackers() {
