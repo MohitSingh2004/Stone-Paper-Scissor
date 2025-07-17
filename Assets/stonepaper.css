@@ -67,7 +67,7 @@ h1 {
   transform: translateY(0);
 }
 
-#scoreBoard {
+.ScoreBoard {
   margin: 20px 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -97,7 +97,11 @@ h1 {
   gap: 10px;
   margin-bottom: 30px;
 }
-
+.Stoneimage:hover,
+.Paperimage:hover,
+.Scissorimage:hover {
+  transform: rotate(-90deg);
+}
 .Stoneimage,
 .Paperimage,
 .Scissorimage {
@@ -111,13 +115,13 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.Stoneimage:hover,
+/* .Stoneimage:hover,
 .Paperimage:hover,
 .Scissorimage:hover {
-  transform: translateY(-5px) scale(1.05);
+  transform: translateY(45deg) scale(1.05);
   border-color: #007bff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .userselection,
 .cpuselection {
@@ -247,6 +251,16 @@ h1 {
     text-align: center;
     gap: 1rem;
     margin-bottom: 16px;
+  }
+  .ScoreBoard {
+    margin: 20px 0;
+    font-size: 1 rem;
+    font-weight: bold;
+    color: white;
+    background-color: #01b7c7;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 }
 
