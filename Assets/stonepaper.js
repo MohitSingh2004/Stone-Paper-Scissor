@@ -89,7 +89,7 @@ function handleSelection(userChoice, userImg) {
     gamecontainer.appendChild(CpuDiv);
 
     showResult(userChoice, cpuChoice.name);
-  }, 700);
+  }, 500);
 }
 
 function showResult(user, cpu) {
